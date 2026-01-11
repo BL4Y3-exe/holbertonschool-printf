@@ -14,7 +14,7 @@ int print_number(long n)
     {
         write(1, "-", 1);
         count++;
-        n = -n
+        n = -n;
     }
 
     if (n / 10)
