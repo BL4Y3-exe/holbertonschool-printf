@@ -1,0 +1,19 @@
+.TH _PRINTF 3
+.SH NAME
+_printf - produces output according to a format
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+_printf prints characters and strings according to a format string.
+Supported format specifiers:
+c - character
+s - string
+% - percent sign
+d, i - sigmed decimal integer
+.SH RETURN VALUE
+Number of characters printed. Returns -1 if an error occurs.
+.SH EXAMPLES
+_printf("Hello %s\n", "world");
+_printf("Number: %d\n", 67);
