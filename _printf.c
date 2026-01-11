@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
             if (format[i] == 'c')
             {
                 c = (char)va_arg(args, int);
-                write(1, &c, 1)
+                write(1, &c, 1);
                 count++;
             }
             else if (format[i] == 's')
@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
                     str++;
                 }
             }
-            else if (format[i] == "%")
+            else if (format[i] == '%')
             {
                 write(1, "%", 1);
                 count++;
